@@ -1,0 +1,64 @@
+﻿@page "/fetchneo4jmovies"
+
+@using BlazorApp3s.Data
+@inject Neo4jMovieService MovieService
+
+<h1>Neo4j Movies</h1>
+
+<p>This component demonstrates fetching movies from a Neo4j database.</p>
+
+<p></p>
+
+@if (movies == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Label</th>
+                <th>Title</th>
+                <th>Released</th>
+                <th>Tagline</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in movies)
+            {
+                @if (movie.Properties.ContainsKey("tagline"))
+                {
+            <tr>
+                <td>@movie.Id</td>
+                <td>@movie.Labels[0]</td>
+                <td>@movie.Properties["title"]</td>
+                <td>@movie.Properties["released"]</td>
+                <td>@movie.Properties["tagline"]</td>
+            </tr>
+                }
+                else
+                {
+        <tr>
+            <td>@movie.Id</td>
+            <td>@movie.Labels[0]</td>
+            <td>@movie.Properties["title"]</td>
+            <td>@movie.Properties["released"]</td>
+            <td>-</td>
+        </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Neo4j.Driver.INode[] movies;
+
+    protected override async Task OnInitializedAsync()
+    {
+        movies = await MovieService.GetMoviesAsync();
+    }
+}

@@ -1,0 +1,16 @@
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\obj\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.csprojAssemblyReference.cache
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\obj\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.AssemblyInfoInputs.cache
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\obj\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.AssemblyInfo.cs
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\obj\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\bin\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.exe
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\bin\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.deps.json
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\bin\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.runtimeconfig.json
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\bin\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.runtimeconfig.dev.json
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\bin\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.dll
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\bin\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.pdb
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\bin\Debug\netcoreapp3.1\Neo4j.Driver.dll
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\bin\Debug\netcoreapp3.1\Neo4j.Driver.Simple.dll
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\obj\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.csproj.CopyComplete
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\obj\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.dll
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\obj\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.pdb
+C:\Users\mwher\source\repos\Neo4jMoviesConsoleApps\Neo4jMoviesConsoleApp2\obj\Debug\netcoreapp3.1\Neo4jMoviesConsoleApp2.genruntimeconfig.cache

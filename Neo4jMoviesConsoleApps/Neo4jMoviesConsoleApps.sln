@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jMoviesConsoleApp1", "Neo4jMoviesConsoleApp1\Neo4jMoviesConsoleApp1.csproj", "{252776E6-53B0-483D-97C0-8C7FB0CF4B69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jMoviesConsoleApp2", "Neo4jMoviesConsoleApp2\Neo4jMoviesConsoleApp2.csproj", "{DE0575B7-B221-4478-B52D-9D510B8E0F7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{252776E6-53B0-483D-97C0-8C7FB0CF4B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252776E6-53B0-483D-97C0-8C7FB0CF4B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252776E6-53B0-483D-97C0-8C7FB0CF4B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{252776E6-53B0-483D-97C0-8C7FB0CF4B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE0575B7-B221-4478-B52D-9D510B8E0F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0575B7-B221-4478-B52D-9D510B8E0F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE0575B7-B221-4478-B52D-9D510B8E0F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE0575B7-B221-4478-B52D-9D510B8E0F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77BD18DD-0FDD-4428-AB8A-E90C1B5C9C80}
+	EndGlobalSection
+EndGlobal

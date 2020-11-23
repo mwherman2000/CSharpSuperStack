@@ -1,0 +1,70 @@
+﻿@page "/claimsprincipaldata"
+
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<h1>Claims Principal Data</h1>
+
+<button @onclick="GetClaimsPrincipalData">Get ClaimsPrincipal Data</button>
+
+<p>@_authMessage</p>
+
+@if (_claims.Count() > 0)
+{
+    <p>Claims</p>
+    <ul>
+        @foreach (var claim in _claims)
+        {
+            <li>@claim.Type: @claim.Value</li>
+        }
+    </ul>
+}
+
+@if (_roles.Count() > 0)
+{
+    <p>Roles</p>
+    <ul>
+        @foreach (var role in _roles)
+        {
+            <li>@role</li>
+        }
+    </ul>
+}
+
+<p>@_surnameMessage</p>
+
+@code {
+    private string _authMessage;
+    private string _surnameMessage;
+    private IEnumerable<Claim> _claims = Enumerable.Empty<Claim>();
+    private List<string> _roles = new List<string>();
+
+    private async Task GetClaimsPrincipalData()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var claimsPrincipal = authState.User;
+
+        if (claimsPrincipal.Identity.IsAuthenticated)
+        {
+            _authMessage = $"{claimsPrincipal.Identity.Name} is authenticated.";
+            _claims = claimsPrincipal.Claims;
+            _surnameMessage = $"Surname: {claimsPrincipal.FindFirst(c => c.Type == ClaimTypes.Surname)?.Value}";
+
+            var user = await UserManager.GetUserAsync(claimsPrincipal);
+            _roles = (List<string>) (await UserManager.GetRolesAsync(user));
+            var isAdmin = _roles.Contains("Admin");
+
+            claimsPrincipal.Claims.Append<Claim>(new Claim(ClaimTypes.Role, "Member")); // doesn't work
+            _claims = claimsPrincipal.Claims;
+        }
+        else
+        {
+            _authMessage = "The user is NOT authenticated.";
+        }
+    }
+}

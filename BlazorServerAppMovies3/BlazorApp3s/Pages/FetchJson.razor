@@ -1,0 +1,64 @@
+﻿@page "/fetchjson"
+
+@using BlazorApp3s.Data
+@inject WeatherForecastJsonService ForecastJsonService
+
+<h1>Weather forecast (JSON)</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
+            {
+                <tr>
+                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.TemperatureC</td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Temperature</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var temp in temperatures.values)
+            {
+                <tr>
+                    <td>@temp</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private WeatherForecast[] forecasts;
+    private WeatherTemperatures temperatures;
+
+    protected override async Task OnInitializedAsync()
+    {
+        temperatures = await ForecastJsonService.GetTemperaturesAsync();
+        forecasts = await ForecastJsonService.GetForecastAsync(DateTime.Now, temperatures);
+    }
+}

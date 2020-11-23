@@ -1,0 +1,16 @@
+C:\Users\mwher\source\repos\Neo4jMovies1\bin\Debug\netcoreapp3.1\Neo4jMovies1.exe
+C:\Users\mwher\source\repos\Neo4jMovies1\bin\Debug\netcoreapp3.1\Neo4jMovies1.deps.json
+C:\Users\mwher\source\repos\Neo4jMovies1\bin\Debug\netcoreapp3.1\Neo4jMovies1.runtimeconfig.json
+C:\Users\mwher\source\repos\Neo4jMovies1\bin\Debug\netcoreapp3.1\Neo4jMovies1.runtimeconfig.dev.json
+C:\Users\mwher\source\repos\Neo4jMovies1\bin\Debug\netcoreapp3.1\Neo4jMovies1.dll
+C:\Users\mwher\source\repos\Neo4jMovies1\bin\Debug\netcoreapp3.1\Neo4jMovies1.pdb
+C:\Users\mwher\source\repos\Neo4jMovies1\obj\Debug\netcoreapp3.1\Neo4jMovies1.csprojAssemblyReference.cache
+C:\Users\mwher\source\repos\Neo4jMovies1\obj\Debug\netcoreapp3.1\Neo4jMovies1.AssemblyInfoInputs.cache
+C:\Users\mwher\source\repos\Neo4jMovies1\obj\Debug\netcoreapp3.1\Neo4jMovies1.AssemblyInfo.cs
+C:\Users\mwher\source\repos\Neo4jMovies1\obj\Debug\netcoreapp3.1\Neo4jMovies1.dll
+C:\Users\mwher\source\repos\Neo4jMovies1\obj\Debug\netcoreapp3.1\Neo4jMovies1.pdb
+C:\Users\mwher\source\repos\Neo4jMovies1\obj\Debug\netcoreapp3.1\Neo4jMovies1.genruntimeconfig.cache
+C:\Users\mwher\source\repos\Neo4jMovies1\bin\Debug\netcoreapp3.1\Neo4j.Driver.dll
+C:\Users\mwher\source\repos\Neo4jMovies1\obj\Debug\netcoreapp3.1\Neo4jMovies1.csproj.CopyComplete
+C:\Users\mwher\source\repos\Neo4jMovies1\bin\Debug\netcoreapp3.1\Neo4j.Driver.Simple.dll
+C:\Users\mwher\source\repos\Neo4jMovies1\obj\Debug\netcoreapp3.1\Neo4jMovies1.csproj.CoreCompileInputs.cache
