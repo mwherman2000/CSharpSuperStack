@@ -41,6 +41,7 @@ namespace BlazorApp4s
             services.AddServerSideBlazor();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<Neo4jMovieService>();
 
             services.AddDbContext<BlazorApp4sContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("BlazorApp4sContext")));

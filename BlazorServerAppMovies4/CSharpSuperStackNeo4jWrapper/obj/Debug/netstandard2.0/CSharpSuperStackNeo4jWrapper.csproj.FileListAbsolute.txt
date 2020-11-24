@@ -1,0 +1,5 @@
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\bin\Debug\netstandard2.0\CSharpSuperStackNeo4jWrapper.deps.json
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\bin\Debug\netstandard2.0\CSharpSuperStackNeo4jWrapper.dll
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\CSharpSuperStackNeo4jWrapper.csprojAssemblyReference.cache
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\CSharpSuperStackNeo4jWrapper.AssemblyInfoInputs.cache
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\CSharpSuperStackNeo4jWrapper.AssemblyInfo.cs

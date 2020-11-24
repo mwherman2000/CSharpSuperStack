@@ -1,0 +1,9 @@
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\bin\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.deps.json
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\bin\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.dll
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\bin\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.pdb
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.csprojAssemblyReference.cache
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.AssemblyInfoInputs.cache
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.AssemblyInfo.cs
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.dll
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.pdb
+C:\CSSS\CSharpSuperStack\BlazorServerAppMovies4\CSharpSuperStackNeo4jWrapper\obj\Debug\netstandard2.0\Parallelspace.CSharpSuperStack.csproj.CoreCompileInputs.cache

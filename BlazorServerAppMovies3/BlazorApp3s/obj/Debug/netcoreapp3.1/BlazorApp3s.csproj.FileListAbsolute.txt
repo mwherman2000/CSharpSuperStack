@@ -87,9 +87,7 @@ C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\BlazorApp3s.MvcApplicationPartsAssemblyInfo.cache
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\BlazorApp3s.RazorComponent.input.cache
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
-C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ClaimsPrincipalData.razor.g.cs
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
-C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CounterLogging.razor.g.cs
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CounterPage.razor.g.cs
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
@@ -106,9 +104,7 @@ C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\BlazorApp3s.TagHelpers.output.cache
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\BlazorApp3s.RazorCoreGenerate.cache
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
-C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\Razor\Pages\ClaimsPrincipalData.razor.g.cs
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
-C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\Razor\Pages\CounterLogging.razor.g.cs
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\Razor\Pages\CounterPage.razor.g.cs
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
 C:\CSSS\CSharpSuperStack\BlazorServerAppMovies3\BlazorApp3s\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs

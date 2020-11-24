@@ -7,7 +7,6 @@ namespace BlazorApp3s.Data
 {
     public class Neo4jMovieService
     {
-
         public Task<INode[]> GetMoviesAsync()
         {
             IDriver driver = GraphDatabase.Driver("bolt://localhost:7687", AuthTokens.Basic("neo4j", "Movies"));

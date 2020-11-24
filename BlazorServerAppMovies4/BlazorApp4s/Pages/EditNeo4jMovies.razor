@@ -1,0 +1,170 @@
+﻿@page "/editneo4jmovies"
+
+@using BlazorApp4s.Data
+@using BlazorApp4s.Models
+@inject Neo4jMovieService MovieService
+
+<h1>Neo4j Movies</h1>
+
+<p>This component demonstrates fetching movies from a Neo4j database.</p>
+
+<p></p>
+
+@if (movies == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <button class="btn btn-success" @onclick="AddMovieShow">Add Movie</button>
+    <p></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Label</th>
+                <th>Title</th>
+                <th>Released</th>
+                <th>Tagline</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in movies)
+            {
+                @if (movie.Properties.ContainsKey("tagline"))
+                {
+                    <tr>
+                        <td>@movie.Id</td>
+                        <td>@movie.Labels[0]</td>
+                        <td>@movie.Properties["title"]</td>
+                        <td>@movie.Properties["released"]</td>
+                        <td>@movie.Properties["tagline"]</td>
+                        <td>
+                            <button class="btn btn-primary" @onclick="(() => EditMovieShow(movie))">Edit</button>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td>@movie.Id</td>
+                        <td>@movie.Labels[0]</td>
+                        <td>@movie.Properties["title"]</td>
+                        <td>@movie.Properties["released"]</td>
+                        <td>-</td>
+                        <td>
+                            <button class="btn btn-primary" @onclick="(() => EditMovieShow(movie))">Edit</button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    @if (ShowPopup)
+    {
+        <!-- This is the popup to create or edit a movie -->
+        <div class="modal" tabindex="-1" style="display:block" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Edit Movie</h3>
+                        <button type="button" class="close"
+                                @onclick="ClosePopup">
+                            <span aria-hidden="true">X</span>
+                        </button>
+                    </div>
+                    <!-- Edit form for the current user -->
+                    <div class="modal-body">
+                        <!-- Only show Id if not a new user -->
+                        @if (TargetMovie.Id != "")
+                        {
+                            <p>@TargetMovie.Id</p>
+                        }
+                        else
+                        {
+                            <p>Enter new movie information:</p>
+                        }
+                        <input class="form-control" type="text"
+                                placeholder="Title"
+                                @bind="TargetMovie.Title" />
+                        <input class="form-control" type="text"
+                               placeholder="Released"
+                               @bind="TargetMovie.Released" />
+                        <input class="form-control" type="text"
+                               placeholder="Tagline"
+                               @bind="TargetMovie.Tagline" />
+                        <br /><br />
+                        <button class="btn btn-primary"
+                                @onclick="SaveMovieUpdate">
+                            Save
+                        </button>
+                        @if (TargetMovie.Id != "")
+                        {
+                            <button class="btn btn-danger"
+                                    @onclick="DeleteMovieUpdate">
+                                Delete
+                            </button>
+                        }
+                        <br />
+                        <span style="color:red">@StatusMessage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <button class="btn btn-success" @onclick="AddMovieShow">Add Movie</button>
+    <p></p>
+}
+
+@code {
+    private Neo4j.Driver.INode[] movies;
+
+    private bool ShowPopup = false;
+    private Movie TargetMovie = new Movie("", "", "", "");
+
+    private string StatusMessage = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetMovies();
+    }
+
+    async Task GetMovies()
+    {
+        movies = await MovieService.GetMoviesAsync();
+    }
+
+    void AddMovieShow()
+    {
+        TargetMovie = new Movie("", "", "", "");
+        ShowPopup = true;
+    }
+
+    void EditMovieShow(Neo4j.Driver.INode movie)
+    {
+        TargetMovie = new Movie(movie);
+        ShowPopup = true;
+    }
+
+    void ClosePopup()
+    {
+        ShowPopup = false;
+    }
+
+    async Task SaveMovieUpdate()
+    {
+        await MovieService.MergeMovieAsync(TargetMovie);
+        ShowPopup = false;
+        await GetMovies();
+    }
+
+    async Task DeleteMovieUpdate()
+    {
+        await MovieService.DeleteMovieAsync(TargetMovie);
+        ShowPopup = false;
+        await GetMovies();
+    }
+}

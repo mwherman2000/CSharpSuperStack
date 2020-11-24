@@ -9,7 +9,7 @@
     <Authorized>
         @if (@context.User.IsInRole(ADMINISTRATION_ROLE))
         {
-            <p>You are in @ADMINISTRATION_ROLE </p>
+            <p>Your role: @ADMINISTRATION_ROLE </p>
 
             <table class="table">
                 <thead>
@@ -111,7 +111,7 @@
         }
         else
         {
-            <p>You're not signed in as a user in @ADMINISTRATION_ROLE.</p>
+            <p>You're not signed in as a user in the @ADMINISTRATION_ROLE role.</p>
         }
     </Authorized>
     <NotAuthorized>
