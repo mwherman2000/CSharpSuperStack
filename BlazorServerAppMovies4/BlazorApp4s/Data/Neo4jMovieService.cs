@@ -10,13 +10,6 @@ namespace BlazorApp4s.Data
 {
     public class Neo4jMovieService
     {
-        //public INode[] GetMovies()
-        //{
-        //    List<INode> entities = Neo4jEntities.Query("Movie");
-
-        //    return entities.ToArray<INode>();
-        //}
-
         public Task<INode[]> GetMoviesAsync()
         {
             return Task.Run( () =>
