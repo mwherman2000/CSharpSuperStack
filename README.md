@@ -15,8 +15,9 @@ Blazor Server web app that retrieves all of the movies from the Neo4j Movies sam
 full CRUD operations on the list of movies (Add, Edit, Update, Delete).
 
 ## Author
-Michael Herman
-Hyperonomy Digital Identity Lab
-Parallelspace Corporation
+Michael Herman, 
+Hyperonomy Digital Identity Lab, 
+Parallelspace Corporation, 
 Alberta, CANADA
+
 mwherman@parallelspace.net
