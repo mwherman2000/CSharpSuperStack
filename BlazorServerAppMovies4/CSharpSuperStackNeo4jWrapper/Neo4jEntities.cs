@@ -154,6 +154,7 @@ namespace Parallelspace.CSharpSuperStack
             string set = " s.{0} = ${0} ";
             string ret = " RETURN s";
 
+            if (String.IsNullOrEmpty(label)) throw new ArgumentNullException();
             if (!properties.Keys.Contains("id")) throw new ArgumentOutOfRangeException();
 
             string id = properties["id"].ToString();
@@ -231,6 +232,8 @@ namespace Parallelspace.CSharpSuperStack
             string deletecmd = "MATCH (s:{0}) DELETE s RETURN COUNT(s) ";
             IResult result = null;
             string value;
+
+            if (String.IsNullOrEmpty(filterlabel)) throw new ArgumentNullException();
 
             string cmd = String.Format(deletecmd, filterlabel);
 
