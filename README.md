@@ -1,6 +1,14 @@
 # CSharpSuperStack
 Creating highly scalable Neo4j web applications without JavaScript 
 
+## Definition
+
+- Application framework for creating highly scalable Neo4j web apps without JavaScript
+- Based on the Blazor OSS project
+- Blazor Server App hosting model
+- Solution stack: C#, HTML and CSS
+- Solution stack: Cypher and Neo4j .NET Driver
+
 ## Neo4jMoviesConsoleApps
 
 Sample .NET C# console applications that talk directly to the Neo4j Driver. They expect the Movies database to be the default database on the Neo4j Server.
